@@ -848,7 +848,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1182789739}
         m_TargetAssemblyTypeName: mainmenu, Assembly-CSharp
-        m_MethodName: nothinghereyet
+        m_MethodName: waverestart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

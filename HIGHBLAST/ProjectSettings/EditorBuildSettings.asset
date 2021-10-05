@@ -65,4 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/nothing here yet.unity
     guid: e57437132f4717d4ba58edc32030fd9a
+  - enabled: 1
+    path: Assets/Scenes/wave.unity
+    guid: f1b715a5c4a962343a2ab8b4a6fd88c8
   m_configObjects: {}

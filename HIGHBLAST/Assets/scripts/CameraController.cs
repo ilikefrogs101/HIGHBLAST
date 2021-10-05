@@ -10,15 +10,12 @@ public class CameraController : MonoBehaviourPunCallbacks
     public Camera weaponCamera;
     float sensX = 1f;
     float sensY = 1f;
-    float baseFov = 90f;
-    float maxFov = 140f;
     float wallRunTilt = 15f;
 
     float wishTilt = 0;
     float curTilt = 0;
     Vector2 currentLook;
     Vector2 sway = Vector3.zero;
-    float fov;
     Rigidbody rb;
 
     void Start()
@@ -39,12 +36,6 @@ public class CameraController : MonoBehaviourPunCallbacks
     void FixedUpdate()
     {
         if (!photonView.IsMine) return;
-
-        float addedFov = rb.velocity.magnitude - 3.44f;
-        fov = Mathf.Lerp(fov, baseFov + addedFov, 0.5f);
-        fov = Mathf.Clamp(fov, baseFov, maxFov);
-        mainCamera.fieldOfView = fov;
-        weaponCamera.fieldOfView = fov;
 
         currentLook = Vector2.Lerp(currentLook, currentLook + sway, 0.8f);
         curTilt = Mathf.LerpAngle(curTilt, wishTilt * wallRunTilt, 0.05f);
@@ -87,9 +78,5 @@ public class CameraController : MonoBehaviourPunCallbacks
         sensY = newVal;
     }
 
-    public void SetFov(float newVal)
-    {
-        baseFov = newVal;
-    }
     #endregion
 }

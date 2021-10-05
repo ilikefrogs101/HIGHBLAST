@@ -74,4 +74,12 @@ public class pause : MonoBehaviourPunCallbacks
         Time.timeScale = 1;
     }
 
+    public void waverestart()
+    {
+        SceneManager.LoadScene(16);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Time.timeScale = 1;
+        crosshair.SetActive(true);
+    }
 }

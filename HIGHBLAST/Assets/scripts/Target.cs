@@ -29,7 +29,7 @@ public class Target : MonoBehaviourPunCallbacks
 
         if (currenthealth <= 0f)
         {
-            photonView.RPC("Die", RpcTarget.All); 
+            photonView.RPC("Die", RpcTarget.All);
         }
     }
 
@@ -38,5 +38,6 @@ public class Target : MonoBehaviourPunCallbacks
     {
         transform.position = new Vector3(-27, 95, -6);
         currenthealth = maxhealth;
+        Debug.Log("Dead");
     }
 }

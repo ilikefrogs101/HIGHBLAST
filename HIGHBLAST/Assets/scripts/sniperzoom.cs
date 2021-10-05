@@ -15,8 +15,8 @@ public class sniperzoom : MonoBehaviour
 
     public Camera maincamera;
 
-    public float scopedfov = 15;
-    private float normalfov;
+    public float scopedfov = 15f;
+    private float normalfov = 60f;
 
     void Update ()
     {
@@ -42,7 +42,6 @@ public class sniperzoom : MonoBehaviour
         cursor.SetActive(false);
         normalfov = maincamera.fieldOfView;
         maincamera.fieldOfView = scopedfov;
-
     }
 
     void OnUnsoped()

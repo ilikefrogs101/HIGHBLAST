@@ -9,13 +9,6 @@ public class multipause : MonoBehaviourPunCallbacks
     public string mainMenuScene;
     public GameObject pauseMenu;
     public bool isPaused;
-    public GameObject crosshair;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -25,7 +18,11 @@ public class multipause : MonoBehaviourPunCallbacks
             if (isPaused)
             {
                 Resume();
-                crosshair.SetActive(true);
+                isPaused = false;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                Time.timeScale = 1;
+                pauseMenu.SetActive(false);
             }
             else
             {
@@ -34,7 +31,6 @@ public class multipause : MonoBehaviourPunCallbacks
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 Time.timeScale = 1;
-                crosshair.SetActive(false);
             }
         }
     }
@@ -42,7 +38,6 @@ public class multipause : MonoBehaviourPunCallbacks
     public void Resume()
     {
         isPaused = false;
-        pauseMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Time.timeScale = 1;
@@ -60,11 +55,9 @@ public class multipause : MonoBehaviourPunCallbacks
 
     public void Respawn()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
         Time.timeScale = 1;
+        Debug.Log("Starting to Respawn");
         photonView.RPC("Die", RpcTarget.All);
-        crosshair.SetActive(true);
     }
 
     public void Quit()

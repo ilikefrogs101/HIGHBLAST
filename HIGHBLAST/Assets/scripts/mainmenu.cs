@@ -120,4 +120,12 @@ public void playgame()
         SceneManager.LoadScene(15);
         Time.timeScale = 1f;
     }
+
+    public void waverestart()
+    {
+        SceneManager.LoadScene(16);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Time.timeScale = 1;
+    }
 }

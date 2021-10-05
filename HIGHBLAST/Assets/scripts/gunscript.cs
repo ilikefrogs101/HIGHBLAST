@@ -50,6 +50,8 @@ public class gunscript : MonoBehaviourPunCallbacks
         if (isRealoading)
             return;
 
+        ammodisplay.GetComponent<Text>().text = currentAmmo.ToString();
+
         if (currentAmmo <= 0)
         {
             StartCoroutine(Reload());
@@ -66,7 +68,6 @@ public class gunscript : MonoBehaviourPunCallbacks
         {
             nextTimetoFire = Time.time + 1f / fireRate;
             Shoot();
-            ammodisplay.GetComponent<Text>().text = currentAmmo.ToString ();
         }
     }
 
