@@ -14,12 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/singleplayermapselect.unity
     guid: 89ba566c4bb459641ace48503e7d77e8
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/test 1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
@@ -47,12 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/fortress attack.unity
     guid: c69664e4541b56d4bb3219545e9607d3
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/boss battle.unity
     guid: 1fa75cc1f95d2324b9de7be7be2b72be

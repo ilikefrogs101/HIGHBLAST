@@ -22,7 +22,7 @@ public void playgame()
         SceneManager.LoadScene(1);
     }
 
-    public void menuscreen()
+    public void mainMenu()
     {
         SceneManager.LoadScene(0);
     }

@@ -7,7 +7,7 @@ public class GrapplingGun : MonoBehaviourPunCallbacks {
     private Vector3 grapplePoint;
     public LayerMask whatIsGrappleable;
     public Transform gunTip, camera, player;
-    private float maxDistance = 100f;
+    private float maxDistance = 5000f;
     private SpringJoint joint;
 
     void Awake() {

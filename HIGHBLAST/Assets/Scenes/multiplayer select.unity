@@ -790,7 +790,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1841990306}
         m_TargetAssemblyTypeName: mainmenu, Assembly-CSharp
-        m_MethodName: menuscreen
+        m_MethodName: mainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -12,7 +12,7 @@ public class gunscript : MonoBehaviourPunCallbacks
     public float recoil = 30f;
 
     public int maxAmmo = 10;
-    private int currentAmmo;
+    public int currentAmmo;
     public float reloadTime = 1f;
     private bool isRealoading = false;
 

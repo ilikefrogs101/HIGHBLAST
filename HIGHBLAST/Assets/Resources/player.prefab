@@ -397,7 +397,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 28671
+    m_Bits: 61439
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -71045,7 +71045,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6232731032096329375}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 4f8af5562ef4824429f601c8f280cca5, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.49999997
@@ -81433,7 +81433,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.08
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:

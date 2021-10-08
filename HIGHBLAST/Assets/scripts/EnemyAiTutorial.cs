@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyAiTutorial : MonoBehaviour
@@ -23,9 +24,10 @@ public class EnemyAiTutorial : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
-    private void Awake()
+    private void Start()
     {
-        player = GameObject.Find("player").transform;
+        if (player !=null);
+        player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -81,7 +83,6 @@ public class EnemyAiTutorial : MonoBehaviour
         {
             ///Attack code here
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-            Destroy(rb.gameObject, 15f);
             rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
             rb.AddForce(transform.up * 8f, ForceMode.Impulse);
             ///End of attack code
@@ -93,11 +94,6 @@ public class EnemyAiTutorial : MonoBehaviour
     private void ResetAttack()
     {
         alreadyAttacked = false;
-    }
-    
-    private void DestroyEnemy()
-    {
-        Destroy(gameObject);
     }
 
     private void OnDrawGizmosSelected()
