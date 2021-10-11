@@ -5,8 +5,9 @@ using UnityEngine;
 public class grenadethrower : MonoBehaviour
 {
     public float delay;
-    private float delayT;
 
+    private float delayT;
+    
     public float throwforce = 50f;
     public GameObject Grenade;
 

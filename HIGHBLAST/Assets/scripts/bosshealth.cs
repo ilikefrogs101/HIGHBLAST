@@ -11,7 +11,7 @@ public class bosshealth : MonoBehaviour
 
     void Start()
     {
-        Bossbar.SetMaxHealth(750);
+        Bossbar.SetMaxHealth(bossmaxhealth);
 
         bosscurrenthealth = bossmaxhealth;
     }

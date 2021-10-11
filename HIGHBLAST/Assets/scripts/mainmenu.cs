@@ -128,4 +128,10 @@ public void playgame()
         Cursor.visible = false;
         Time.timeScale = 1;
     }
+
+    public void featuretestmap()
+    {
+        SceneManager.LoadScene(17);
+        Time.timeScale = 1f;
+    }
 }

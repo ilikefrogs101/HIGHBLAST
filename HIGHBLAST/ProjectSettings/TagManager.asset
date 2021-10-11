@@ -8,6 +8,9 @@ TagManager:
   - Target
   - Enemy
   - boss
+  - Missile
+  - Shooter
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -25,7 +28,7 @@ TagManager:
   - WhatIsWall
   - WhatIsLadder
   - WinObject
-  - 
+  - PickUpable
   - 
   - 
   - 
