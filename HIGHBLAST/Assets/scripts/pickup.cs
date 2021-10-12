@@ -19,7 +19,7 @@ public class pickup : MonoBehaviour
             {
                 GetComponent<Rigidbody>().useGravity = false;
                 this.transform.position = dest.position;
-                this.transform.parent = GameObject.Find("holding").transform;
+                this.transform.parent = GameObject.Find("Holding").transform;
             }
         }
     
