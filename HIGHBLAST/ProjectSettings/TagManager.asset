@@ -11,6 +11,8 @@ TagManager:
   - Missile
   - Shooter
   - Boss
+  - FxTemporaire
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -29,7 +31,7 @@ TagManager:
   - WhatIsLadder
   - WinObject
   - PickUpable
-  - 
+  - POST PROCESS
   - 
   - 
   - 
